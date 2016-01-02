@@ -1,3 +1,9 @@
+//工厂方法是最简单地创建派生类对象的方法，也是很常用的，工厂方法内部一般使用switch-case根据不同的key去创建不同的派生类对象。
+//需要生产的类越来越多，switch-case会越来越长，显然这种简单工厂已经不堪负荷。
+//要消除这些长长的switch-case语句是一个需要解决的问题，而自动注册的对象工厂则是一个比较优雅的解决方案。
+//自动注册的对象工厂遵循了开放-封闭原则，新增对象时无需修改原有代码，仅仅需要扩展即可，彻底地消除了switch-case语句。
+//本代码参考自：http://geek.csdn.net/news/detail/48963
+
 #include <map>
 #include <iostream>
 #include <string>
